@@ -107,9 +107,9 @@ subscription query ($accountId: String!) {
 ```
 
 A few more examples can also be found in:
- - Reefscan block explorer is [open-source](https://github.com/reef-defi/reef-explorer), and all UI components use GraphQL as the backend.
- - [UI-examples](https://github.com/reef-defi/ui-examples) has a few GraphQL [queries](https://github.com/reef-defi/ui-examples/blob/master/packages/example-react/src/gql.ts) as well
- - [UI Kit](/docs/developers/ui_kit/) has pre-made components for common tasks
+ - The old Reefscan block explorer is [open-source](https://github.com/reef-defi/reef-explorer), and all UI components use GraphQL as the backend.
+ - [Old UI-examples](https://github.com/reef-defi/ui-examples) has a few GraphQL [queries](https://github.com/reef-defi/ui-examples/blob/master/packages/example-react/src/gql.ts) as well
+ - [New Reef UI Kit](https://github.com/reef-chain/ui-kit) has pre-made components for common tasks.
 
 
 ### Postgres database
@@ -149,5 +149,5 @@ curl 'https://testnet.reefscan.com/api/verificator/submit-verification' \
   --compressed
 ```
 
-[Remix](https://remix.reefscan.com) and [HardHat](https://github.com/reef-defi/hardhat-reef) already support the verification API, and should be the default methods for
+[Remix](https://remix.reefscan.com) and [HardHat](https://github.com/reef-chain/hardhat-reef-examples) already support the verification API, and should be the default methods for
 deploying smart contracts onto Reef chain.

@@ -22,7 +22,7 @@ Reef v10 features and improvements:
 ## Upgrade instructions
 The node operators do not need to do anything, because this release will be rolled out as an on-chain runtime upgrade.
 
-**All apps must upgrade the their [evm-provider](https://github.com/reef-defi/evm-provider.js) to the latest version on NPM.
+**All apps must upgrade the their [evm-provider](https://github.com/reef-chain/evm-provider) to the latest version on NPM.
 All apps interacting with EVM must upgrade their event processing logic according with the v10 [changes](https://github.com/reef-defi/reef-chain/pull/63/files#diff-db3ad6e2ca083dd40dacda29e393a5d47e24baae25ab8efcab355ed09c5db7efL307-R344).**
 
 ## Live rollout

@@ -51,7 +51,7 @@ The metadata syncing with the [Reef browser extension](/docs/users/extension) wi
 ## Developer SDKs
 
 ### Reef for JS/TypeScript devs
-We provide multiple libraries to interact with the Reef chain. [reef.js](https://github.com/reef-defi/reef.js) can be used for both Substrate as well as EVM module interaction. An [evm-provider.js](https://github.com/reef-defi/evm-provider.js/commits/master) wrapper around the reef.js strives to make the EVM module interaction easier - it is compatible with the ethers.js library. The [hardhat-reef](https://github.com/reef-defi/hardhat-reef) plugin goes a step further and allows to be used in the Hardhat framework - you can easily compile/deploy/interact with the contracts in a single project.
+We provide multiple libraries to interact with the Reef chain. [reef.js](https://github.com/reef-defi/reef.js) can be used for both Substrate as well as EVM module interaction. An [evm-provider.js](https://github.com/reef-chain/evm-provider/commits/master) wrapper around the reef.js strives to make the EVM module interaction easier - it is compatible with the ethers.js library. The [hardhat-reef](https://github.com/reef-chain/hardhat-reef-examples) plugin goes a step further and allows to be used in the Hardhat framework - you can easily compile/deploy/interact with the contracts in a single project.
 
 
 See [the corresponding page](/docs/developers/js_libraries) describing JS libraries in detail.

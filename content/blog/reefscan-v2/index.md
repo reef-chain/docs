@@ -28,7 +28,7 @@ apps and wallets.
 
 ## Improved smart contract support
 Smart contracts now have a full source viewer and improved verification API. The verification APIs
-are also integrated into [Reef Hardhat](https://github.com/reef-defi/hardhat-reef) and [Remix](https://remix.reefscan.com).
+are also integrated into [Reef Hardhat](https://github.com/reef-chain/hardhat-reef-examples) and [Remix](https://remix.reefscan.com).
 
 ## The Graph
 Reefscan's choice of database backend - Postgres - will certainly delight many software engineers.
@@ -47,10 +47,3 @@ enhancements and other features:
  - An API for programmatically verifying smart contracts source code
  - An API for retreiving verified smart contract's source and ABI
  - and [more](/docs/developers/reefscan/#smart-contracts)
-
-## Full Docker support
-Reefscan runs in Docker. Setting up the full Reefscan stack (Postgres, GraphQL, Backend & Frontend) is as easy as:
-```
-make net=mainnet env=prod up
-```
-Check out the full [documentation](https://github.com/reef-defi/reef-explorer#readme) on setting up and configuring your own, production grade instance of Reefscan.

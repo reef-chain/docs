@@ -13,21 +13,11 @@ weight: 250
 toc: true
 ---
 
-## reef.js
+## EVM provider
 
-[reef.js](https://github.com/reef-defi/reef.js) is the low-level wrapper around all the methods exposed by a Reef Chain client and defines all the types exposed by a node.
-
-The API is split up into a number of internal packages:
-  - [@reef-defi/api](https://github.com/reef-defi/reef.js/tree/master/packages/api): The API library, providing both Promise and RxJS Observable-based interfaces. This is the main user-facing entry point.
-  - [@reef-defi/api-derive](https://github.com/reef-defi/reef.js/tree/master/packages/api-derive): Derived results that are injected into the API, allowing for combinations of various query results (only used internally and exposed on the API instances via `api.derive.*`)
-  - [@reef-defi/types](https://github.com/reef-defi/reef.js/tree/master/packages/types), [@reef-defi/type-definitions](https://github.com/reef-defi/reef.js/tree/master/packages/type-definitions): Codecs/type definitions for all Substrate primitives.
-
-
-reef.js exposes most of the methods that can be found in [Polkadot.js documentation](https://polkadot.js.org/docs/api), e.g. to return a data about an account:
+Reef's [@reef-chain/evm-provider](https://github.com/reef-chain/evm-provider) exposes most of the methods that can be found in [Polkadot.js documentation](https://polkadot.js.org/docs/api), e.g. to return a data about an account:
 
 ```javascript
-import { ApiPromise } from '@polkadot/api';
-import { WsProvider } from '@polkadot/rpc-provider';
 import { options } from '@reef-defi/api';
 
 async function main() {
@@ -256,7 +246,7 @@ For atomic transactions (all succeed or all fail), use `utility.batchAll` method
 
 ## evm-provider.js
 
-[evm-provider.js](https://github.com/reef-defi/evm-provider.js) is a wrapper around the `reef.js` library described above, primarily used to interact with the EVM module deployed on the Reef chain.
+[evm-provider.js](https://github.com/reef-chain/evm-provider) is a wrapper around the `reef.js` library described above, primarily used to interact with the EVM module deployed on the Reef chain.
 
 ### Instantiation
 
@@ -420,12 +410,12 @@ Please use [GraphQL](/docs/developers/reefscan/#the-graph) for this purpose.
 
 ## Hardhat
 
-Javascript developers can use [Reef Hardhat plugin](https://github.com/reef-defi/hardhat-reef) to develop, deploy and test smart contracts on the Reef chain. A few working examples can be found in [hardhat-reef-examples repo](https://github.com/reef-defi/hardhat-reef-examples). A hardhat reef template can be found [here](https://github.com/reef-defi/hardhat-reef-template).
+Javascript developers can use [Reef Hardhat plugin](https://github.com/reef-chain/hardhat-reef-examples) to develop, deploy and test smart contracts on the Reef chain. A few working examples can be found in [hardhat-reef-examples repo](https://github.com/reef-chain/hardhat-reef-examples-examples). A hardhat reef template can be found [here](https://github.com/reef-chain/hardhat-reef-examples-template).
 
 ## Examples
 Here are a few example applications that can be used as a Reef chain integration reference:
 - [Reefswap](https://github.com/reef-defi/reefswap) for integration with Reef Hardhat (`scripts` directory) and integration with the `evm-provider.js` (`src` directory).
-- [Hardhat Reef Examples](https://github.com/reef-defi/hardhat-reef-examples) for examples of integration with the Reef Hardhat plugin.
-- [UI examples](https://github.com/reef-defi/ui-examples) for integration with Polkadot.js browser extension and EVM contract interaction.
+- [Hardhat Reef Examples](https://github.com/reef-chain/hardhat-reef-examples-examples) for examples of integration with the Reef Hardhat plugin.
+- [Reef UI Kit](https://github.com/reef-chain/ui-kit) includes Example view with all components and their usage.
 - [EVM Playground](https://github.com/reef-defi/evm-canvas-ui) a more sophisticated example of integration with Polkadot.js browser extension and EVM contract interaction.
 - [Reefscan](https://github.com/reef-defi/reef-explorer) and [Remix Reef Plugin](https://github.com/reef-defi/reef-remix-plugin) for Reef chain integration.

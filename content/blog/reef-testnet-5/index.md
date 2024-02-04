@@ -22,7 +22,7 @@ Developers can use Remix IDE for Reef chain to quickly deploy and test their sma
 You can give Reef Remix a try at [https://remix.reefscan.com](https://remix.reefscan.com/)
 
 ## Hardhat support
-More advanced developers can now enjoy a native [Hardhat](https://hardhat.org/) integration. Check out our [Reef Hardhat](https://github.com/reef-defi/hardhat-reef) page to get started.
+More advanced developers can now enjoy a native [Hardhat](https://hardhat.org/) integration. Check out our [Reef Hardhat](https://github.com/reef-chain/hardhat-reef-examples) page to get started.
 
 ## Testnet Faucet
 We are inviting developers to join us in [Reef's Discord server](https://discord.gg/invite/DHpr7sCeGa) with any questions related to Reef chain. Make sure to verify your account, then select the Builder role in `📋┊start-here`. You will get access to the Reef chain testnet faucet in `🚰┊faucet`.

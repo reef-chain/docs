@@ -50,8 +50,8 @@ Fortunately we have drop in replacements for most commonly used tools.
 | Ethereum        |         | Reef Chain                                                   |
 | --------------- | ------  | ------------------------------------------------------------ |
 | Metamask        |   -->   | [Reef Extension](/docs/users/extension)                      |
-| web3            |   -->   | [@reef-defi/evm-provider](https://github.com/reef-defi/evm-provider.js) |
-| Truffle/Hardhat |   -->   | [Reef Hardhat](https://github.com/reef-defi/hardhat-reef)    |
+| web3            |   -->   | [@reef-defi/evm-provider](https://github.com/reef-chain/evm-provider) |
+| Truffle/Hardhat |   -->   | [Reef Hardhat](https://github.com/reef-chain/hardhat-reef-examples)    |
 | Remix IDE       |   -->   | [Reef Remix](https://remix.reefscan.com/)                    |
 | Etherscan       |   -->   | [Reefscan](https://reefscan.com/)                            |
 
@@ -60,14 +60,14 @@ Fortunately we have drop in replacements for most commonly used tools.
 
 We are going to pick a simple ERC-20 contract for our demo, but feel free to try out other examples as well.
 
-In this guide we are using [Reef Hardhat](https://github.com/reef-defi/hardhat-reef), which is
+In this guide we are using [Reef Hardhat](https://github.com/reef-chain/hardhat-reef-examples), which is
 suitable for more experienced developers. If you would like to deploy your contract via an easy to
 use web IDE, try [Reef Remix](https://remix.reefscan.com/).
 
 ### Clone the examples repo
-{{< btn-copy text="git clone https://github.com/reef-defi/hardhat-reef-examples" >}}
+{{< btn-copy text="git clone https://github.com/reef-chain/hardhat-reef-examples-examples" >}}
 ```bash
-git clone https://github.com/reef-defi/hardhat-reef-examples
+git clone https://github.com/reef-chain/hardhat-reef-examples-examples
 ```
 
 ### Install the dependencies
@@ -172,12 +172,4 @@ Verify your deployed contract on: [Mainnet](https://reefscan.com/verifyContract)
 If you would like to build an app quickly from pre-made components, check out the [Reef UI kit](/docs/developers/ui_kit/)
 for React, Vue and Angular.
 
-To start building a custom UI for your DApp, check the [UI examples repository](https://github.com/reef-defi/ui-examples). It provides components as well as [a single file React example](https://github.com/reef-defi/ui-examples/blob/master/packages/example-react/src/index.tsx), which contains most of the functionality you need to setup a DApp:
-  - Reef extension connection
-  - listing accounts in Reef extension
-  - interacting with EVM contracts on the Reef Chain
-  - generating Substrate addresses
-
-
-[evm-canvas-ui](https://github.com/reef-defi/evm-canvas-ui) is a more sophisticated UI interacting with the Reef chain. It is built on top of Reef.js and uses `evm-provider.js` library to deploy and interact with the contracts.
-
+To start building a custom UI for your DApp, check the [Reef UI Kit repository](https://github.com/reef-chain/ui-kit). It provides the most commonly used UI components and elements to create your DApp with ease.

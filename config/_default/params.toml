@@ -19,7 +19,7 @@ schemaType = "Organization"
 schemaLogo = "reef.png"
 schemaTwitter = "https://twitter.com/reef_chain"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/reef-defi"
+schemaGitHub = "https://github.com/reef-chain"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -43,5 +43,5 @@ alert = false
 alertText = "Like Reef? <a class=\"alert-link\" href=\"https://github.com/reef-defi/reef-chain/stargazers\">Star on GitHub</a>. Thanks!</a>"
 
 # Edit Page
-docsRepo = "https://github.com/reef-defi/reef-docs"
+docsRepo = "https://github.com/reef-chain/docs"
 editPage = false

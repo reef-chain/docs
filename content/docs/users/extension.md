@@ -13,10 +13,10 @@ weight: 120
 toc: true
 ---
 
-Reef extension is kind of like Metamask, but for Reef chain. You can get it for **[Firefox](https://addons.mozilla.org/en-US/firefox/addon/reef-js-extension/)** or install manually in Chrome/Brave browser.
+Reef extension is kind of like Metamask, but for Reef chain. You can get it for **[Chrome](https://chrome.google.com/webstore/detail/reef-chain-extension/mjgkpalnahacmhkikiommfiomhjipgjn)**. Extension can also be installed manually in Chrome/Brave browser or Firefox.
 
 <div class="button-container">
-  <!-- div>
+  <div>
     <a
       href="https://chrome.google.com/webstore/detail/reef-chain-extension/mjgkpalnahacmhkikiommfiomhjipgjn"
       target="_blank"
@@ -35,9 +35,9 @@ Reef extension is kind of like Metamask, but for Reef chain. You can get it for 
       </svg>
       <span>Download for Chrome</span>
     </a>
-  </div -->
+  </div>
 
-  <div>
+  <!-- div>
     <a
       href="https://addons.mozilla.org/en-US/firefox/addon/reef-js-extension/"
       target="_blank"
@@ -60,7 +60,7 @@ Reef extension is kind of like Metamask, but for Reef chain. You can get it for 
       </svg>
       <span>Download for Firefox</span>
     </a>
-  </div>
+  </div -->
 </div>
 
 If you are a developer, check out the [integration guide](https://github.com/reef-defi/browser-extension#readme).

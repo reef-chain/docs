@@ -21,10 +21,8 @@ blockchain RPC, for example:
  - history of token trades on a DEX
  - history of user's interaction with a smart contract
 
-
 Reefscan offers 3 solutions for various use cases:
  - GraphQL server for web apps
- - PostgreSQL database for advanced apps and data analysis
  - HTTP API for developers
 
 ### The Graph
@@ -35,7 +33,13 @@ It is available for both mainnet and testnet, under following URIs:
 Mainnet: [https://reefscan.com/graphql](https://squid.subsquid.io/reef-explorer/graphql)
 Testnet: [https://testnet.reefscan.com/graphql](https://squid.subsquid.io/reef-explorer-testnet/graphql)
 ```
-The URIs provides a GraphQL Playground interface for testing queries aswell.
+The URIs provide a GraphQL Playground interface for testing queries as well.
+
+Larger dApps in production can deploy their own indexer by cloning and creating new subsquid.io service from source code.
+For fully featured indexer you can use https://github.com/reef-chain/subsquid-processor.
+Dex indexer is available at https://github.com/reef-chain/subsquid-processor-dex.
+You can also check an example of contract events indexer https://github.com/reef-chain/subsquid-evm-event-processor.
+Each repo also has its setup description.
 
 ![](/docs/developers/the_graph.png)
 
@@ -43,91 +47,73 @@ The URIs provides a GraphQL Playground interface for testing queries aswell.
 
 Here is an example query for getting chain stats:
 ```
-query ChainInfo {
-  chain_info {
-    name
+query ChainInfosQuery {
+  chainInfos(limit: 10) {
     count
+    id
   }
 }
 ```
-
-We can subscribe to smart contract events, following a similar interface to Ethereum's `eth_subscribe('logs')`:
+We can get contract events:
 ```
 import { gql } from '@apollo/client';
 
 export const CONTRACT_EVENTS_GQL = gql`
-  subscription evmEvent(
-    $address: String_comparison_exp!
-    $perPage: Int!
-    $offset: Int!
-    $topic0: String_comparison_exp
-  ) {
-    evm_event(
-      limit: $perPage
-      offset: $offset
-      order_by: [
-        { block_id: desc }
-        { extrinsic_index: desc }
-        { event_index: desc }
-      ]
-      where: {
-        _and: [
-          { contract_address: $address }
-          { topic_0: $topic0 }
-          { method: { _eq: "Log" } }
-        ]
-      }
+  query evmEvent(
+      $address: String_comparison_exp!
+      $blockId: bigint_comparison_exp!
+      $topic0: String_comparison_exp
     ) {
-      contract_address
-      data_parsed
-      data_raw
-      topic_0
-      topic_1
-      topic_2
-      topic_3
-      block_id
-      extrinsic_index
-      event_index
+      evm_event(
+        order_by: [
+          { block_id: desc }
+          { extrinsic_index: desc }
+          { event_index: desc }
+        ]
+        where: {
+          _and: [
+            { contract_address: $address }
+            { topic_0: $topic0 }
+            { method: { _eq: "Log" } }
+            { block_id: $blockId }
+          ]
+        }
+      ) {
+        contract_address
+        data_parsed
+        data_raw
+        topic_0
+        topic_1
+        topic_2
+        topic_3
+        block_id
+        extrinsic_index
+        event_index
+      }
     }
-  }
 `;
 ```
 
+If you want to subscribe to contract events you can use subsquid.io service to easily run your own indexer and GQL subscriptions.
+Another way is to use https://www.npmjs.com/package/@reef-chain/util-lib and subscribe to `getEvmEvents$` rx-js Observable.
+
 We can also find tokens and their balances for a specific account:
 ```
-subscription query ($accountId: String!) {
-    token_holder(
-      order_by: { balance: desc }
-      where: { signer: { _eq: $accountId } }
-    ) {
-      token_address
-      balance
-    }
+query MyQuery($accountId: String) {
+  tokenHolders(
+    where: {
+    signer: {id_eq: $accountId}},
+    orderBy: balance_DESC, limit: 10
+  ) {
+    evmAddress
+    balance
   }
+}
 ```
-
-A few more examples can also be found in:
- - The old Reefscan block explorer is [open-source](https://github.com/reef-defi/reef-explorer), and all UI components use GraphQL as the backend.
- - [Old UI-examples](https://github.com/reef-defi/ui-examples) has a few GraphQL [queries](https://github.com/reef-defi/ui-examples/blob/master/packages/example-react/src/gql.ts) as well
- - [New Reef UI Kit](https://github.com/reef-chain/ui-kit) has pre-made components for common tasks.
-
-
-### Postgres database
-Power users who wish to have Reef chain data available in Postgres can run their own instance of
-Reefscan.
-
-Reefscan runs in Docker. Setting up the full Reefscan stack (PostgreSQL, GraphQL, APIs) is as easy as:
-```
-yarn
-make net=mainnet env=prod up
-```
-Check out the full [documentation](https://github.com/reef-defi/reef-explorer#readme) on setting up and configuring your own, production grade instance of Reefscan.
-
-You may then connect to your local Postgres database and run queries against it.
 
 ## Smart contracts
 
-### Querying API
+### Querying reefscan API
 The querying API allows one to obtain the contract sources and ABI (if verified).
 ```
 curl -s 'https://testnet.reefscan.com/api/contract/0xc12532e256D63F9A2C3b7Cc750ed5C136035AEe9' | jq .

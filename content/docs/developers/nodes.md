@@ -154,6 +154,13 @@ This node can now be directly connected to via from another node via `--bootnode
 
 {{< alert icon="💡" text="You can also point a domain name to your node's ip and then reference it as /dns/bootnode.mydomain.com/tcp/30333/..." >}}
 
+### Issues with peers
+If you have issues with 0 peers for mainnet you can add flag with value:
+`--bootnodes /dns/mainnet-bootnode1.reefscan.info/tcp/30333/ws/p2p/12D3KooWFHSc9cUcyNtavUkLg4VBAeBnYNgy713BnovUa9WNY5pp`
+
+For and for testnet network:
+`--bootnodes /dns/testnet-bootnode1.reefscan.info/tcp/30333/ws/p2p/12D3KooWCucVs4CFNnAf1R9hoChCHGajNPrbb3eHyKYY4sKhGeM1`
+
 ## Start a validator node
 Please check our [validator](/docs/governance/validators/) guide on how to setup and configure a
 validator node.

@@ -17,7 +17,7 @@ toc: true
 Reef's mission is to make DeFi, NFTs and games easy and accessible to more people.
 
 ## What is Reef token?
-Reef Token is the native currency on Reef Chain, and is used for transaction fees (gas) and on-chain goverance (NPoS and PoC). Reef token is also available as ERC-20 on Ethereum and BSC and are convertible 1:1 with native Reef chain tokens.
+Reef coin is the native currency on Reef Chain, and is used for transaction fees (gas) and on-chain goverance (NPoS and PoC). Reef token is also available as ERC-20 on Ethereum and BSC and are convertible 1:1 with native Reef chain tokens.
 
 ## Is Reef chain PoW?
 Reef chain is **not** incumbered by Proof of Waste. Furthermore, smart contract transaction **fees get burned** to align scalability incentives - validators only get paid from fixed rewards pool and have no incentive to artificially constrain the network like in Bitcoin or Ethereum.
@@ -29,5 +29,5 @@ Users:
 
 Developers:
 - [Discord server](https://discord.gg/invite/DHpr7sCeGa)
-- [GitHub issues](https://github.com/reef-defi/reef-chain/issues)
+- [GitHub](https://github.com/reef-chain/reef-chain-node/issues)
 

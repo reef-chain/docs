@@ -254,7 +254,7 @@ The instantiation is similar to reef.js:
 
 ```javascript
 import { options } from "@reef-defi/api";
-import { Provider } from "@reef-defi/evm-provider";
+import { Provider } from "@reef-chain/evm-provider";
 import { WsProvider } from "@polkadot/api";
 
 const provider = new Provider(
@@ -273,7 +273,7 @@ import {
   TestAccountSigningKey,
   Provider,
   Signer,
-} from "@reef-defi/evm-provider";
+} from "@reef-chain/evm-provider";
 import { WsProvider, Keyring } from "@polkadot/api";
 import { createTestPairs } from "@polkadot/keyring/testingPairs";
 import { KeyringPair } from "@polkadot/keyring/types";

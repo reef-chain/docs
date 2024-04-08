@@ -364,7 +364,7 @@ const main = async () => {
 }
 ```
 
-To instantiate a contract object we use a [`ContractFactory`](https://docs.ethers.io/v5/api/contract/contract-factory/#ContractFactory) object. It requires a contract ABI `Token.json`  and is the output of a contract compilation. You can create it by any means of Solidity compilation (e.g. directly through `solc`, through the Remix website IDE...)
+To instantiate a contract object we use a [`ContractFactory`](https://docs.ethers.io/v5/api/contract/contract-factory/#ContractFactory) object. It requires a contract ABI `Token.json`  and is the output of a contract compilation. You can create it by any means of Solidity compilation (e.g. directly through `solc`, through the Remix website IDE...). Reef chain EVM fully supports Solidity v0.8.11.
 
 {{< alert icon="💡" text="Use the Hardhat framework below to abstract and simplify many of the intricacies involving using the evm-provider directly. The compilation for example will be done automatically by the Hardhat framework." >}}
 

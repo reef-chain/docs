@@ -21,9 +21,9 @@ Reef chain is written in [Rust](https://www.rust-lang.org/). A basic familiarity
 
 
 ### Clone the repo
-{{< btn-copy text="git clone --recursive https://github.com/reef-defi/reef-chain" >}}
+{{< btn-copy text="git clone --recursive https://github.com/reef-chain/reef-chain-node" >}}
 ```bash
-git clone --recursive https://github.com/reef-defi/reef-chain
+git clone --recursive https://github.com/reef-chain/reef-chain-node
 ```
 
 ### Install Rust
@@ -112,7 +112,7 @@ The Reef chain mainnet or testnet RPC node can be started like so:
 
 To make the node archival (for use with indexers or block explorers) we use the `--pruning=archive` flag. Omit this flag to run the _light_ RPC node.
 
-Additionally, you may want to configure nginx frontend with TLS. See an [example](https://github.com/reef-defi/reef-chain/blob/master/rpc/nginx.conf).
+Additionally, you may want to configure nginx frontend with TLS. See an [example](https://github.com/reef-chain/reef-chain-node/blob/main/rpc/nginx.conf).
 
 
 ## Start a bootnode

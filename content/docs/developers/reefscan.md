@@ -13,7 +13,7 @@ weight: 270
 toc: true
 ---
 
-## Reef chain data
+## Reef Chain data
 Most apps require a fast and efficient data source for things that are not easily available over raw
 blockchain RPC, for example:
  - balances of all tokens that a user has
@@ -25,14 +25,14 @@ Reefscan offers 3 solutions for various use cases:
  - GraphQL server for web apps
  - HTTP API for developers
 
-### The Graph
+### GraphQL
 Reef uses a public GraphQL service from Subsquid that indexes all onchain events at blazing speeds.
 
 It is available for both mainnet and testnet, under following URIs:
-```
-Mainnet: [https://reefscan.com/graphql](https://squid.subsquid.io/reef-explorer/graphql)
-Testnet: [https://testnet.reefscan.com/graphql](https://squid.subsquid.io/reef-explorer-testnet/graphql)
-```
+
+- Mainnet: [https://reefscan.com/graphql](https://squid.subsquid.io/reef-explorer/graphql)
+- Testnet: [https://testnet.reefscan.com/graphql](https://squid.subsquid.io/reef-explorer-testnet/graphql)
+
 The URIs provide a GraphQL Playground interface for testing queries as well.
 
 Larger dApps in production can deploy their own indexer by cloning and creating new subsquid.io service from source code.
@@ -113,7 +113,7 @@ query MyQuery($accountId: String) {
 
 ## Smart contracts
 
-### Querying reefscan API
+### Querying Reefscan API
 The querying API allows one to obtain the contract sources and ABI (if verified).
 ```
 curl -s 'https://testnet.reefscan.com/api/contract/0xc12532e256D63F9A2C3b7Cc750ed5C136035AEe9' | jq .

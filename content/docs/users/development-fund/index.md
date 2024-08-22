@@ -42,7 +42,7 @@ This market dynamic enables Reef nominators and validators to get more long-term
 
 :::tip
 
-Please refer to [this section](/docs/governance/staking), or the tutorials for [staking via Reef Console](https://medium.com/reef-finance/how-to-bond-your-reef-and-nominate-a-reef-chain-validator-using-the-reef-js-browser-extension-e88933c516eb) or [Fearless Wallet](https://www.youtube.com/watch?v=OvCAIj56NNE), to learn more about participating as a **Nominator**.
+Please refer to [this section](docs/governance/staking), or the tutorials for [staking via Reef Console](https://medium.com/reef-finance/how-to-bond-your-reef-and-nominate-a-reef-chain-validator-using-the-reef-js-browser-extension-e88933c516eb) or [Fearless Wallet](https://www.youtube.com/watch?v=OvCAIj56NNE), to learn more about participating as a **Nominator**.
 
 :::
 

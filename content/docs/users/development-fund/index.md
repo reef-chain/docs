@@ -1,6 +1,17 @@
 ---
 sidebar_position: 1
 title: Community Development Fund Overview
+description: "An overview of the Reef Community Development Fund and how it works."
+lead: ""
+date: 2024-08-22T16:40:00+00:00
+lastmod: 2024-08-22T16:40:00+00:00
+draft: false
+images: []
+menu:
+  docs:
+    parent: "development-fund"
+weight: 110
+toc: true
 ---
 
 The Community Development Fund is a crucial accelerator in realizing Reef's vision, as it lays the foundation for the development of amazing dApps for users and fuels the drive towards making Web3 accessible to everyone.

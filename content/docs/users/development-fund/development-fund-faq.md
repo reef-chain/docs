@@ -2,6 +2,17 @@
 sidebar_position: 2
 title: Community Development Fund FAQ
 sidebar_label: Community Development Fund FAQ
+description: "Frequently asked questions and answers about the Reef Community Development Fund."
+lead: ""
+date: 2024-08-22T16:40:00+00:00
+lastmod: 2024-08-22T16:40:00+00:00
+draft: false
+images: []
+menu:
+  docs:
+    parent: "development-fund"
+weight: 110
+toc: true
 ---
 
 ## For Stakers

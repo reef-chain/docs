@@ -108,6 +108,38 @@ If you are a developer, check out the [integration guide](https://github.com/ree
 
 <img width="460" alt="Screenshot 2023-10-26 at 3 58 24 PM" src="https://github.com/reef-defi/browser-extension/assets/62092256/1856dbde-ce08-4b16-890a-16e8d5cfd1da">
 
+## Manually Install on Firefox Browser
+1. Go to the source file by [clicking here](https://github.com/reef-defi/browser-extension/blob/master/source.zip)
+
+2. Click on the download icon at top right
+
+<img width="720" alt="Screenshot 2023-10-26 at 3 38 05 PM" src="https://github.com/reef-defi/browser-extension/assets/62092256/a13afdc5-7a4a-4330-9e29-400892299ad2">
+
+3. After downloading the file open Firefox and type `about:debugging#/runtime/this-firefox` in url input.
+
+<img width="720" alt="Screenshot 2024-09-05 at 1 31 17 PM" src="https://github.com/user-attachments/assets/18456410-de38-4ead-bd8c-4510f1b444f2">
+
+**OR**
+
+Click on the `puzzle icon` at top right
+
+<img width="720" alt="Screenshot 2024-09-05 at 1 36 03 PM" src="https://github.com/user-attachments/assets/3b29f8e6-2ff3-402f-8d79-f619b9840d4d">
+
+now click on `Extensions` from the left Menu. 
+
+<img width="720" alt="Screenshot 2024-09-05 at 1 36 51 PM" src="https://github.com/user-attachments/assets/98590983-1643-4112-bcc7-eb7c2819f3d4">
+
+Then open settings in `Manage Your Extensions` page and select `Debug Add-ons`.
+
+<img width="720" alt="Screenshot 2024-09-05 at 1 40 00 PM" src="https://github.com/user-attachments/assets/b3aea492-75c4-4859-94f4-b539c7b722b1">
+
+
+4. On `about:debugging#/runtime/this-firefox` page click `Load Temporary Add-on` button and select downloaded source.zip file.
+
+<img width="720" alt="Screenshot 2024-09-05 at 1 41 58 PM" src="https://github.com/user-attachments/assets/f75581a9-845a-4380-9226-fdcff4d1058f">
+
+5. Extension is installed in browser and you can pin it to toolbar from menu.
+
 ### What is Reef Extension for?
 Reef extension is a browser extension that allows one to safely interact with Reef chain ecosystem
 without exposing the private keys. It can:

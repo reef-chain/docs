@@ -3,7 +3,7 @@ title: "Ecosystem"
 description: "Here are some of the most popular apps and DeFi projects on Reef."
 lead: ""
 date: 2020-10-06T08:48:57+00:00
-lastmod: 2025-02-19T08:48:57+00:00
+lastmod: 2025-28-19T08:48:57+00:00
 draft: false
 images: []
 menu:
@@ -28,6 +28,7 @@ Looking for developer tools? Check out the [Developer resources](/docs/developer
 
 ### DeFi
  - [ReefSwap](https://reefswap.com) is the Uniswap v2 based DEX for Reef Chain tokens.
+ - [Reef Bridge](https://reefbridge.app) lets users bridge $REEF from Ethereum and BNB Chain to Reef Chain.
 
 ### NFTs
  - [Sqwid](https://sqwid.app/) is the first Reef Chain native NFT marketplace.

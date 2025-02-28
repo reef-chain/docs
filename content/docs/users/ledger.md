@@ -3,7 +3,7 @@ title: "Ledger"
 description: "Ledger Nano S and Nano X support for Reef chain"
 lead: ""
 date: 2020-10-06T08:48:57+00:00
-lastmod: 2020-10-06T08:48:57+00:00
+lastmod: 2025-02-29T08:48:57+00:00
 draft: false
 images: []
 menu:
@@ -13,7 +13,7 @@ weight: 130
 toc: true
 ---
 
-{{< alert icon="⚠️" text="Ledger support is currently only available for advanced users. Reef app is currently pending Ledger store approval, after which it will be available for everyone." >}}
+{{< alert icon="⚠️" text="Ledger support is currently unavailable. Reef app will be upgraded and audited in the near future, after which it will be available for everyone." >}}
 
 ### Ledger device
 A Ledger device is a hardware wallet that is considered one of the most secure ways to store your digital assets. Ledger uses an offline, or cold storage, method of generating private keys, making it a preferred method for many crypto users. This guide will help you to connect your Ledger device to the Reef extension. Using an app listed above, such as [Reef console](https://console.reefscan.com) you can then use Reef extension to safely send REEF, stake REEF and other various actions from your hardware wallet account.

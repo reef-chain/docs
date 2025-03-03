@@ -3,7 +3,7 @@ title: "Extension"
 description: "Reef extension offers a convenient way to interact with dapps on Reef chain."
 lead: ""
 date: 2020-10-06T08:48:57+00:00
-lastmod: 2020-10-06T08:48:57+00:00
+lastmod: 2025-02-19T08:48:57+00:00
 draft: false
 images: []
 menu:
@@ -13,7 +13,7 @@ weight: 120
 toc: true
 ---
 
-Reef extension is kind of like Metamask, but for Reef chain. You can get it for **[Chrome](https://chrome.google.com/webstore/detail/reef-chain-extension/mjgkpalnahacmhkikiommfiomhjipgjn)**. Extension can also be installed manually in Chrome/Brave browser or Firefox.
+Reef extension is kind of like Metamask, but for Reef Chain. You can get it for **[Chrome](https://chrome.google.com/webstore/detail/reef-chain-extension/mjgkpalnahacmhkikiommfiomhjipgjn)**. Extension can also be installed manually in Chrome/Brave/Opera/Arc or Firefox browser.
 
 <div class="button-container">
   <div>
@@ -65,7 +65,7 @@ Reef extension is kind of like Metamask, but for Reef chain. You can get it for 
 
 If you are a developer, check out the [integration guide](https://github.com/reef-defi/browser-extension#readme).
 
-## Manually Install on Chrome / Brave Browser
+## Manually Install on Chrome / Brave / Opera / Arc Browser
 1. Go to the source file by [clicking here](https://github.com/reef-defi/browser-extension/blob/master/source.zip)
 
 2. Click on the download icon at top right
@@ -74,7 +74,7 @@ If you are a developer, check out the [integration guide](https://github.com/ree
 
 3. After downloading the file , unzip it.
 
-4. Open Chrome/Brave browser and click on the three dots at top
+4. Open Chrome/Brave/Opera/Arc browser and click on the three dots at top
 
 <img width="720" alt="Screenshot 2023-10-26 at 3 43 25 PM" src="https://github.com/reef-defi/browser-extension/assets/62092256/49c638c8-ff7d-452b-821b-7991e9537584">
 <br>

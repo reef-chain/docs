@@ -22,7 +22,7 @@ To use Reef Bridge, you will need the following:
 - A Reef wallet with [Reef EVM address bound](https://blog.reef.io/claim-evm-address)
 - At least 1000 $REEF in your Reef wallet
 
-Reef Bridge was audited by CredShields' SolidityScan product. [View the audit report](./reefbridge_audit_7eed170350f023b6.pdf).
+Reef Bridge was audited by CredShields' SolidityScan product. [View the audit report](../users/reefbridge_audit_7eed170350f023b6.pdf).
 
 ## Bridge Instructions
 

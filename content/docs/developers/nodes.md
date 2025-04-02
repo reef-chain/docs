@@ -1,4 +1,4 @@
-ip---
+---
 title: "Nodes"
 description: "Running a Reef chain node"
 lead: "Learn how to setup your Reef chain RPC node."

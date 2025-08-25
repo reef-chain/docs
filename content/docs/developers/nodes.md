@@ -1,4 +1,4 @@
-ip---
+---
 title: "Nodes"
 description: "Running a Reef chain node"
 lead: "Learn how to setup your Reef chain RPC node."
@@ -91,8 +91,6 @@ Here are some of the common arguments you can use for a local node:
 ```
 
 
-
-
 ## Start a RPC node
 The Reef chain mainnet or testnet RPC node can be started like so:
 ```
@@ -170,3 +168,11 @@ To prune (reset) the node run:
 ```
 ./reef-node purge-chain --chain <dev/testnet/mainnet> --base-path /path/to/state
 ```
+
+## Deploy Spheron Node
+
+You can easily deploy a Reef node using the Spheron Network's compute platform. Spheron provides a simplified and cost-effective method to deploy Reef nodes with just a few clicks, without the hassle of manual configurations.
+
+For detailed instructions, you can visit [Spheron’s Reef Node Deployment Guide](https://docs.spheron.network/marketplace-guide/reef/).
+
+To deploy a Reef node with Spheron, check out the [Spheron Marketplace](https://app.spheron.network/#/compute/marketplace?template=Reef).

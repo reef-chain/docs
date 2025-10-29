@@ -3,7 +3,7 @@ title: "Introduction"
 description: "Reef Chain is a fast, affordable EVM-compatible chain for DeFi. You can use this guide to learn how to write and deploy Solidity smart contracts."
 lead: "Reef Chain is an EVM-compatible chain for building fast, easy-to-use products with NPoS consensus."
 date: 2020-10-06T08:48:57+00:00
-lastmod: 2025-10-23T08:48:57+00:00
+lastmod: 2025-10-29T08:48:57+00:00
 draft: false
 images: []
 menu:

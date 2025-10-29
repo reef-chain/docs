@@ -16,7 +16,7 @@ toc: true
 
 ## Get started
 
-If you're looking for things you can do with Reef, check out the [Reef Ecosystem](/docs/users/ecosystem) and [A]wesomeReef](https://awesomereef.xyz).
+If you're looking for things you can do with Reef, check out the [Reef Ecosystem](/docs/users/ecosystem) and [AwesomeReef](https://awesomereef.xyz).
 
 ### Build on Reef
 

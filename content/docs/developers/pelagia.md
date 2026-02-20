@@ -39,20 +39,16 @@ where multiple projects successfully deployed to it during the event.
 
 ## Wallet Setup
 
-<video width="50%" controls>
-  <source src="https://file.notion.so/f/f/e4840ac7-ad4b-4c3c-a0d6-1ad97fc929fc/4ad26a75-c3f3-45d8-b7ad-c767b4c533e3/Kapture_2025-09-23_at_10.43.34.mp4?table=block&id=2777048b-ea54-8090-ba42-fa62f5379d94&spaceId=e4840ac7-ad4b-4c3c-a0d6-1ad97fc929fc&expirationTimestamp=1771596000000&signature=rhr5PLAqCbaiqqsJe3tgm4D2AFnVryREHrk_mmepuY8&downloadName=Kapture+2025-09-23+at+10.43.34.mp4" type="video/mp4">
-</video>
+<div style="max-width: 300px; margin: 0 auto;">
+  <video width="100%" controls>
+    <source src="/videos/pelagia.mp4" type="video/mp4">
+  </video>
+</div>
+
 
 To view data and block production in the console, open your browser settings and enable insecure content.
 
-<div style="max-width: 600px; margin: 0 auto;">
-  <img
-    src="https://file.notion.so/f/f/e4840ac7-ad4b-4c3c-a0d6-1ad97fc929fc/117b6afe-3be0-48ab-969c-8459291615bd/Screenshot_2025-09-23_at_12.24.32.png?table=block&id=2777048b-ea54-8089-b374-dcdfef440fae&spaceId=e4840ac7-ad4b-4c3c-a0d6-1ad97fc929fc&expirationTimestamp=1771596000000&signature=x4KOcCkmmo4-svfUR4wUJ0rBwg0qjh66bn7ML800JlM&downloadName=Screenshot+2025-09-23+at+12.24.32.png"
-    alt="Browser settings – enable insecure content"
-    width="100%"
-    style="border-radius: 8px;"
-  />
-</div>
+![terminal-log](/images/pelagia/pelagia.png "")
 
 ## Deploy Smart Contracts
 

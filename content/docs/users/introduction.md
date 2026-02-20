@@ -53,7 +53,7 @@ automatically burned.
 #### Reef vs legacy chains
 |                             | Bitcoin             | Ethereum            | Reef                           |
 | --------------------------- | ------------------- | ------------------- | ------------------------------ |
-| Consensus algorithm         | Proof of Waste      | Proof of Stakes      | Nominated Proof of Stake       |
+| Consensus algorithm         | Proof of Work       | Proof of Stake      | Nominated Proof of Stake       |
 | Energy consumption          | More than [Poland](https://digiconomist.net/bitcoin-energy-consumption)    | Same as [Gibraltar](https://digiconomist.net/ethereum-energy-consumption)   | Less than a shopping mall |
 | On-Chain upgradability      | N/A                 | N/A                 | Yes                            |
 | Transaction finality        | 3600+ seconds       | 600+ seconds        | 40 seconds                     |

@@ -31,8 +31,8 @@ where multiple projects successfully deployed to it during the event.
 | --------------- | -------------------------------------------- |
 | Network Name    | Reef Pelagia                                 |
 | Native Token    | REEF                                         |
-| SS58 Format     | 3939                                         |
-| RPC (HTTP)      | https://rpc-pelagia.reefscan.com             |
+| SS58 Format     | 13939                                         |
+| RPC (HTTP)      | http://34.123.142.246:8545/                  |
 | Block Explorer  | https://dev.papi.how/explorer#networkId=localhost&endpoint=ws%3A%2F%2F34.123.142.246%3A9944 |
 ```
 {{< alert icon="⚠️" text="RPC endpoints above may change during early access. Always check the <a href='https://reef.io'>Reef website</a> or Discord for the latest endpoints." >}}

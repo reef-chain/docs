@@ -58,7 +58,10 @@ you can begin here to find docs and tools to deploy:
 [Polkadot Smart Contracts](https://docs.polkadot.com/develop/smart-contracts/)
 
 ## Next steps
-Setting up your Developer Environment as follows:
+Explore the tools and frameworks available for building and testing smart contracts on the Reef network.
+
+These environments streamline the development process, from writing and compiling to testing and deploying smart contracts.<br>
+The guides in this section will help you evaluate each tool's strengths, making it easier to choose the best fit for your project based on complexity, team expertise, and specific requirements.
 ## What to Consider
 
 Consider the following when evaluating development environments for your workflow:
@@ -69,5 +72,6 @@ Consider the following when evaluating development environments for your workflo
 | Hardhat                 | No        | Yes (via package manager)    | Advanced development, scripting, automation| Script-based               | Mocha, Chai, mainnet forking        | Highly customizable    | 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```
+For practical examples, please refer to the [Hardhat Materials](/docs/developers/hardhat/) section.
 
-If you any additional questions, please ask your questions on our [Discord Server](https://discord.gg/KAC4gSmf) and we will be happy to assist further.
+If you have any additional questions, please ask your questions on our [Discord Server](https://discord.gg/KAC4gSmf) and we will be happy to assist further.

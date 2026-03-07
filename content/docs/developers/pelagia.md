@@ -58,11 +58,20 @@ you can begin here to find docs and tools to deploy:
 [Polkadot Smart Contracts](https://docs.polkadot.com/develop/smart-contracts/)
 
 ## Next steps
-Setting up your [Developer Environment](https://reefchain.notion.site/Set-Up-Your-Dev-Environment-2757048bea548090b7acd6aeb36d1d00)
+Explore the tools and frameworks available for building and testing smart contracts on the Reef network.
 
+These environments streamline the development process, from writing and compiling to testing and deploying smart contracts.<br>
+The guides in this section will help you evaluate each tool's strengths, making it easier to choose the best fit for your project based on complexity, team expertise, and specific requirements.
+## What to Consider
 
-Here's sample code for deploying smart contracts on Reef Pelagia testnet using Hardhat.
+Consider the following when evaluating development environments for your workflow:
+```
+| Development Environment | Web-Based | Installation Required        | Best For                                   | Compilation & Deployment   | Testing & Debugging                 | Extensibility          |
+| ----------------------- | --------- | ---------------------------- | ------------------------------------------ | -------------------------- | ----------------------------------- | ---------------------- |
+| Remix                   | Yes       | No                           | Beginners, quick prototyping               | Built-in UI & compiler     | Basic tools                         | Limited plugin support |
+| Hardhat                 | No        | Yes (via package manager)    | Advanced development, scripting, automation| Script-based               | Mocha, Chai, mainnet forking        | Highly customizable    | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
+For practical examples, please refer to the [Hardhat Materials](/docs/developers/hardhat/) section.
 
-[Hardhat Materials](https://reefchain.notion.site/Hardhat-with-Reef-Pelagia-2757048bea5480fc9121dcc73ee74504)
-
-If you any additional questions, please ask your questions on our [Discord Server](https://discord.gg/KAC4gSmf) and we will be happy to assist further.
+If you have any additional questions, please ask your questions on our [Discord Server](https://discord.gg/KAC4gSmf) and we will be happy to assist further.

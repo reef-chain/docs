@@ -29,6 +29,7 @@ A Reef validator cluster can be deployed in **two different ways** on Dokploy:
     - [🟢 **Method 1: Single Template – Full Cluster Setup**](#-method-1-single-template--full-cluster-setup)
     - [🔵 **Method 2: Multiple Templates – Bootstrap \& Validators**](#-method-2-multiple-templates--bootstrap--validators)
         - [Deploy 2 or more validators → finalize blocks.](#deploy-2-or-more-validators--finalize-blocks)
+      - [Local Docker deployment instructions:](#local-docker-deployment-instructions)
 
 
 ---
@@ -137,3 +138,33 @@ Same template:
 <img src="https://github.com/user-attachments/assets/e3644fdf-4465-4fc8-967b-10f9d93513bc" alt="ETH RPC Template" style="max-width: 600px; width: 100%; height: auto;">
 
 > ⚠️ **Important** — ETH RPC default port: `http://reef.host:8545`
+
+---------
+#### Local Docker deployment instructions:
+1. clone the git repo.
+   
+   `git clone -b reef-chain https://github.com/anukulpandey/dokploy-templates.git`
+2. switch to the reef-dev-cluster directory.
+   
+   `cd dokploy-templates/blueprints/reef-dev-cluster`
+3. Start the docker instance:
+   
+   `docker-compose up`
+4. Verify the logs — once completed, your logs should look similar to the following:
+````
+reef-dev-cluster-1  | 2026-04-23 09:41:22 Running JSON-RPC server: addr=127.0.0.1:42967,[::1]:36105
+reef-dev-cluster-1  | 2026-04-23 09:41:22 〽️ Prometheus exporter started at 127.0.0.1:9618
+reef-dev-cluster-1  | 2026-04-23 09:41:22 👶 Starting BABE Authorship worker
+Container reef-dev-cluster-reef-dev-cluster-1 Healthy
+reef-dev-cluster-eth-rpc-1  | 2026-04-23 09:41:26 🌐 Connecting to node at: ws://reef-dev-cluster:9945 ...
+reef-dev-cluster-eth-rpc-1  | 2026-04-23 09:41:26 🌟 Connected to node at: ws://reef-dev-cluster:9945
+reef-dev-cluster-eth-rpc-1  | 2026-04-23 09:41:26 💾 Using in-memory database, keeping only 256 blocks in memory
+reef-dev-cluster-eth-rpc-1  | 2026-04-23 09:41:26 Node does not have getAutomine RPC. Defaulting to automine=false.
+reef-dev-cluster-eth-rpc-1  | 2026-04-23 09:41:26 〽️ Prometheus exporter started at 127.0.0.1:9616
+reef-dev-cluster-eth-rpc-1  | 2026-04-23 09:41:26 Running JSON-RPC server: addr=0.0.0.0:8545,[::]:32917
+reef-dev-cluster-eth-rpc-1  | 2026-04-23 09:41:26 🔌 Subscribing to new blocks (BestBlocks)
+reef-dev-cluster-eth-rpc-1  | 2026-04-23 09:41:26 🔌 Subscribing to new blocks (FinalizedBlocks)
+reef-dev-cluster-1          | ==> /tmp/bootnode.log <==
+reef-dev-cluster-1          | 2026-04-23 09:41:27 💤 Idle (0 peers), best: #0 (0xe72c…1267), finalized #0 (0xe72c…1267), ⬇ 0 ⬆ 0
+````
+---------

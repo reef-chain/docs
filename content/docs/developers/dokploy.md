@@ -28,8 +28,8 @@ A Reef validator cluster can be deployed in **two different ways** on Dokploy:
 - [📑 **Table of Contents**](#-table-of-contents)
     - [🟢 **Method 1: Single Template – Full Cluster Setup**](#-method-1-single-template--full-cluster-setup)
     - [🔵 **Method 2: Multiple Templates – Bootstrap \& Validators**](#-method-2-multiple-templates--bootstrap--validators)
-        - [Deploy 2 or more validators → finalize blocks.](#deploy-2-or-more-validators--finalize-blocks)
-      - [Local Docker deployment instructions:](#local-docker-deployment-instructions)
+    - [Deploy 2 or more validators → finalize blocks.](#deploy-2-or-more-validators--finalize-blocks)
+    - [Local Docker deployment instructions:](#local-docker-deployment-instructions)
 
 
 ---
@@ -138,7 +138,6 @@ Same template:
 <img src="https://github.com/user-attachments/assets/e3644fdf-4465-4fc8-967b-10f9d93513bc" alt="ETH RPC Template" style="max-width: 600px; width: 100%; height: auto;">
 
 > ⚠️ **Important** — ETH RPC default port: `http://reef.host:8545`
-
 ---------
 #### Local Docker deployment instructions:
 1. clone the git repo.

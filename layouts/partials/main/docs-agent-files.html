@@ -1,0 +1,14 @@
+{{- $dir := .dir -}}
+{{- $base := .base -}}
+{{- $files := slice -}}
+{{- range readDir $dir -}}
+  {{- if .IsDir -}}
+    {{- $nested := partial "main/docs-agent-files.html" (dict "dir" (printf "%s/%s" $dir .Name) "base" (printf "%s/%s" $base .Name)) -}}
+    {{- range $nested -}}
+      {{- $files = $files | append . -}}
+    {{- end -}}
+  {{- else if strings.HasSuffix .Name ".md" -}}
+    {{- $files = $files | append (printf "%s/%s" $base .Name) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $files -}}

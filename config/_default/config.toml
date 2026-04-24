@@ -18,6 +18,9 @@ section = ["HTML", "RSS", "SITEMAP"]
 suffixes = [""]
 delimiter = ""
 
+[mediaTypes."text/markdown"]
+suffixes = ["md"]
+
 # add output format for netlify _redirects
 [outputFormats.REDIRECTS]
 mediaType = "text/netlify"
@@ -40,6 +43,12 @@ isHTML = false
 isPlainText = true
 noUgly = true
 rel  = "sitemap"
+
+[outputFormats.AGENTS]
+mediaType = "text/markdown"
+baseName = "agents"
+isPlainText = true
+rel = "alternate"
 
 [markup]
   [markup.goldmark]

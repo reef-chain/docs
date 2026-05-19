@@ -2,8 +2,8 @@
 title: "Wallet Setup — Reef Pelagia"
 description: "Add the Reef Pelagia testnet to MetaMask, Trust Wallet, Zerion, and other EVM wallets."
 lead: "Add the Reef Pelagia testnet to MetaMask, Trust Wallet, Zerion, and other EVM wallets."
-date: 2026-02-20T00:00:00+00:00
-lastmod: 2026-02-20T00:00:00+00:00
+date: 2026-05-13T00:00:00+00:00
+lastmod: 2026-05-19T00:00:00+00:00
 draft: false
 images: []
 menu:
@@ -28,10 +28,10 @@ Before opening any wallet, have these values ready. They are the only values req
 | Field | Value |
 | --- | --- |
 | Network name | `Reef Pelagia` |
-| RPC URL | `http://eth.reef-node-reefdevcluster-808c46-72-60-35-83.sslip.io` |
+| RPC URL | `https://eth.reef-node-reefdevcluster-808c46-72-60-35-83.nip.io/` |
 | Chain ID | `13939` |
 | Currency symbol | `REEF` |
-| Block explorer URL | `http://explorer-frontend-y3vx1v-aaa30a-72-60-35-83.sslip.io/` |
+| Block explorer URL | `https://explorer-frontend-ozqgaf-62f0c7-72-60-35-83.nip.io/` |
 
 All other parameters (decimals, SS58 prefix, WebSocket URL, etc.) are handled by the wallet automatically once these values are in place.
 
@@ -107,7 +107,7 @@ The same five fields work in:
 - **Coinbase Wallet** — *Settings → Networks → Add custom network*
 - **Frame** — *Settings → Chains → Add new chain*
 
-If your wallet supports EIP-3085 (`wallet_addEthereumChain`), Pelagia can also be added with a single click via a dApp that calls the standard request. A one-click "Add Pelagia" button is available on the [testnet web app](http://reef-node-reefapp-kcriyx-a2707a-72-60-35-83.sslip.io/).
+If your wallet supports EIP-3085 (`wallet_addEthereumChain`), Pelagia can also be added with a single click via a dApp that calls the standard request. A one-click "Add Pelagia" button is available on the [testnet web app](https://reef-node-reefapp-kcriyx-a2707a-72-60-35-83.nip.io/).
 
 ---
 
@@ -125,7 +125,7 @@ If the wallet shows a connection error or the network selector hangs, see the [F
 
 ## Funding your wallet
 
-A freshly added Pelagia account holds zero REEF. To deploy contracts or send transactions, request testnet REEF from the [faucet](http://faucet.reef-node-reefdevcluster-1e797e-72-60-35-83.sslip.io).
+A freshly added Pelagia account holds zero REEF. To deploy contracts or send transactions, request testnet REEF from the [faucet](https://faucet.reef-node-reefdevcluster-1e797e-72-60-35-83.nip.io/).
 
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "Networks"
-description: "Reef chain networks"
-lead: "Reef chain's networks."
+description: "Reef networks"
+lead: "Reef's networks."
 date: 2020-10-13T15:21:01+02:00
-lastmod: 2020-10-13T15:21:01+02:00
+lastmod: 2026-05-18T15:21:01+02:00
 draft: false
 images: []
 menu:
@@ -41,8 +41,8 @@ Pelagia testnet tokens have no real value. State may be reset on upgrades.
 | Polkadot SDK version | `stable2512` |
 | Smart contract VM | PolkaVM (`pallet-revive`) |
 | Code blob size limit | 100 KB |
-| HTTP RPC | `hhttp://eth.reef-node-reefdevcluster-808c46-72-60-35-83.sslip.io` |
-| Faucet | See [Faucet](http://faucet.reef-node-reefdevcluster-1e797e-72-60-35-83.sslip.io) |
+| HTTP RPC | `https://eth.reef-node-reefdevcluster-808c46-72-60-35-83.nip.io/` |
+| Faucet | See [Faucet](https://faucet.reef-node-reefdevcluster-1e797e-72-60-35-83.nip.io/) |
 | Block explorer | See [Pelagia → Block explorer](https://docs.reef.io/docs/developers/pelagia/#block-explorer) |
 
 ---

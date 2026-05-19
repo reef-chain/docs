@@ -2,8 +2,8 @@
 title: "Pelagia Testnet"
 description: "Connect to and deploy on Reef Pelagia, the next-generation Reef testnet."
 lead: "Learn how to connect to and deploy on Reef Pelagia, the next-generation Reef Chain testnet."
-date: 2026-02-20T00:00:00+00:00
-lastmod: 2026-02-20T00:00:00+00:00
+date: 2025-09-10T00:00:00+00:00
+lastmod: 2026-05-19T00:00:00+00:00
 draft: false
 images: []
 menu:
@@ -42,10 +42,9 @@ The values below are everything required to connect a wallet, an RPC client, or 
 | Network name | Reef Pelagia |
 | Native token symbol | REEF |
 | Native token decimals | 12 |
-| EVM Chain ID | `13939`  <sub>// confirm with chain team</sub> |
-| SS58 prefix | `42`  <sub>// confirm with chain team</sub> |
-| HTTP RPC | `https://rpc-pelagia.reef.io`  <sub>// placeholder; current endpoint is `http://34.123.142.246:8545/`</sub> |
-| WebSocket RPC | `wss://rpc-pelagia.reef.io/ws`  <sub>// placeholder</sub> |
+| EVM Chain ID | `13939` |
+| SS58 prefix | `42` |
+| HTTP RPC | `https://eth.reef-node-reefdevcluster-808c46-72-60-35-83.nip.io/` |
 | Block explorer | See [Block explorer](#block-explorer) below |
 | Polkadot SDK version | `stable2512` |
 | Smart contract VM | PolkaVM (`pallet-revive`) |
@@ -132,7 +131,7 @@ For the full walkthrough — including the compilation flow, local testing, and 
 
 ## Block explorer
 
-A Pelagia-aware build of [Blockscout](http://explorer-frontend-y3vx1v-aaa30a-72-60-35-83.sslip.io/) is availablein progress. Other explorer options include:
+A Pelagia-aware build of [Blockscout](https://explorer-frontend-ozqgaf-62f0c7-72-60-35-83.nip.io/) is availablein progress. Other explorer options include:
 
 - **Polkadot.js Apps**, pointed at the Pelagia WebSocket endpoint, for inspecting blocks, extrinsics, and Substrate-level state.
 - **Standard JSON-RPC tooling** (`eth_getTransactionByHash`, `eth_getBlockByNumber`, etc.) against the Pelagia HTTP RPC.

@@ -41,8 +41,8 @@ Pelagia testnet tokens have no real value. State may be reset on upgrades.
 | Polkadot SDK version | `stable2512` |
 | Smart contract VM | PolkaVM (`pallet-revive`) |
 | Code blob size limit | 100 KB |
-| HTTP RPC | `https://eth.reef-node-reefdevcluster-808c46-72-60-35-83.nip.io/` |
-| Faucet | See [Faucet](https://faucet.reef-node-reefdevcluster-1e797e-72-60-35-83.nip.io/) |
+| HTTP RPC | `https://eth.reef-node-reefdevcluster-b0be3e-72-60-35-83.nip.io/` |
+| Faucet | See [Faucet](https://faucet.reef-node-reefdevcluster-6058af-72-60-35-83.nip.io/) |
 | Block explorer | See [Pelagia → Block explorer](https://docs.reef.io/docs/developers/pelagia/#block-explorer) |
 
 ---

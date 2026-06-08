@@ -25,9 +25,8 @@ Reef Chain is **not** incumbered by Proof of Work (PoW). Furthermore, smart cont
 ## Where can I get help?
 
 Users:
-- [User Discord](https://discord.com/invite/reefchain)
+- [User Discord](https://discord.gg/DHpr7sCeGa)
 
 Developers:
-- [Discord server](https://discord.gg/invite/reefchain)
+- [Discord server](https://discord.gg/DHpr7sCeGa)
 - [GitHub](https://github.com/reef-chain/reef-chain-node/issues)
-

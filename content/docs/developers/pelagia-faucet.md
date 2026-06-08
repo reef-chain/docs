@@ -24,7 +24,7 @@ Reef Pelagia transactions and contract deployments are paid in REEF, the same as
 
 The Pelagia faucet is a web application. No Discord role, no CLI, no wallet connection — just paste an address and request a drip.
 
-1. Open the faucet at **[`https://faucet.reef-node-reefdevcluster-1e797e-72-60-35-83.nip.io/`](https://faucet.reef-node-reefdevcluster-1e797e-72-60-35-83.nip.io/)**
+1. Open **[the faucet](https://faucet.reef-node-reefdevcluster-6058af-72-60-35-83.nip.io/)**
 2. Paste the **EVM wallet address** you want funded into the address field. This is the standard `0x…` address shown by MetaMask, Trust Wallet, or Zerion when Pelagia is the selected network.
 3. Click **Send drip**.
 4. The faucet will queue and broadcast the funding transaction. The 2,000 REEF allocation arrives in the destination address **within 30 seconds**, often more quickly.

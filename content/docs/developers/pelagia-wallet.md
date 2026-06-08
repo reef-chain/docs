@@ -28,10 +28,10 @@ Before opening any wallet, have these values ready. They are the only values req
 | Field | Value |
 | --- | --- |
 | Network name | `Reef Pelagia` |
-| RPC URL | `https://eth.reef-node-reefdevcluster-808c46-72-60-35-83.nip.io/` |
+| RPC URL | `https://eth.reef-node-reefdevcluster-b0be3e-72-60-35-83.nip.io/` |
 | Chain ID | `13939` |
 | Currency symbol | `REEF` |
-| Block explorer URL | `https://explorer-frontend-ozqgaf-62f0c7-72-60-35-83.nip.io/` |
+| Block explorer URL | `https://explorer-frontend-ibcy8d-1204c4-72-60-35-83.nip.io/` |
 
 All other parameters (decimals, SS58 prefix, WebSocket URL, etc.) are handled by the wallet automatically once these values are in place.
 
@@ -107,7 +107,7 @@ The same five fields work in:
 - **Coinbase Wallet** — *Settings → Networks → Add custom network*
 - **Frame** — *Settings → Chains → Add new chain*
 
-If your wallet supports EIP-3085 (`wallet_addEthereumChain`), Pelagia can also be added with a single click via a dApp that calls the standard request. A one-click "Add Pelagia" button is available on the [testnet web app](https://reef-node-reefapp-kcriyx-a2707a-72-60-35-83.nip.io/).
+If your wallet supports EIP-3085 (`wallet_addEthereumChain`), Pelagia can also be added with a single click via a dApp that calls the standard request. A one-click "Add Pelagia" button is available on the [testnet web app](https://reef-node-reefdevcluster-df2501-72-60-35-83.nip.io/).
 
 ---
 
@@ -125,7 +125,7 @@ If the wallet shows a connection error or the network selector hangs, see the [F
 
 ## Funding your wallet
 
-A freshly added Pelagia account holds zero REEF. To deploy contracts or send transactions, request testnet REEF from the [faucet](https://faucet.reef-node-reefdevcluster-1e797e-72-60-35-83.nip.io/).
+A freshly added Pelagia account holds zero REEF. To deploy contracts or send transactions, request testnet REEF from the [faucet](https://faucet.reef-node-reefdevcluster-6058af-72-60-35-83.nip.io/).
 
 ---
 
@@ -142,6 +142,6 @@ Most browsers happily run both extensions side by side. The accounts are entirel
 
 ## Next steps
 
-- [Get testnet REEF from the faucet](https://#)
-- [Deploy your first contract on Pelagia](https://#)
+- [Get testnet REEF from the faucet](https://faucet.reef-node-reefdevcluster-6058af-72-60-35-83.nip.io/)
+- [Deploy your first contract on Pelagia](https://docs.reef.io/docs/developers/pelagia/#deploy-a-smart-contract)
 - [FAQ and Troubleshooting](https://#)

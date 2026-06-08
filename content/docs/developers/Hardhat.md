@@ -65,14 +65,14 @@ npm install --save-dev @parity/hardhat-polkadot@0.1.9
 ```
 npx hardhat-polkadot init
 ```
-Select Create a JavaScript project when prompted and follow the instructions. <br>
+Select Create a JavaScript project when prompted and follow the instructions. <br>
 After that, your project will be created with three main folders:
 
 - **`contracts`**: Where your Solidity smart contracts live.
 - **`test`**: Contains your test files that validate contract functionality.
 - **`ignition`**: Deployment modules for safely deploying your contracts to various networks.
 
-5. Add the following folder to the .gitignore file if it is not already there
+5. Add the following folder to the .gitignore file if it is not already there
 ```
 echo '/ignition/deployments/' >> .gitignore
 ```
@@ -82,7 +82,7 @@ npm install
 ```
 **Note**
 
-This last step is needed to set up the `hardhat-polkadot` plugin. It will install the `@parity/hardhat-polkadot` package and all its dependencies. <br>
+This last step is needed to set up the `hardhat-polkadot` plugin. It will install the `@parity/hardhat-polkadot` package and all its dependencies. <br>
 In the future, the plugin will handle this automatically.
 
 ---
@@ -142,10 +142,10 @@ module.exports = {
 };
 ```
 
-For the binary configuration, replace `INSERT_PATH_TO_RESOLC_COMPILER` with the proper path to the binary. <br>
-To obtain the binary, check the [releases](https://github.com/paritytech/revive/releases) section of the `resolc` compiler, and download the latest version.
+For the binary configuration, replace `INSERT_PATH_TO_RESOLC_COMPILER` with the proper path to the binary. <br>
+To obtain the binary, check the [releases](https://github.com/paritytech/revive/releases) section of the `resolc` compiler, and download the latest version.
 
-The default settings used can be found in the [`constants.ts`](https://github.com/paritytech/hardhat-polkadot/blob/v0.1.5/packages/hardhat-polkadot-resolc/src/constants.ts#L8-L23) file of the `hardhat-polkadot` source code. <br>
+The default settings used can be found in the [`constants.ts`](https://github.com/paritytech/hardhat-polkadot/blob/v0.1.5/packages/hardhat-polkadot-resolc/src/constants.ts#L8-L23) file of the `hardhat-polkadot` source code. <br>
 You can change them according to your project needs. Generally, the recommended settings for optimized outputs are the following:
 
 `hardhat.config.js`
@@ -165,13 +165,13 @@ resolc: {
 }
 ```
 
-You can check the [`ResolcConfig`](https://github.com/paritytech/hardhat-polkadot/blob/v0.1.5/packages/hardhat-polkadot-resolc/src/types.ts#L26) for more information about compilation settings.
+You can check the [`ResolcConfig`](https://github.com/paritytech/hardhat-polkadot/blob/v0.1.5/packages/hardhat-polkadot-resolc/src/types.ts#L26) for more information about compilation settings.
 
 - Compile the contract with Hardhat:
     
     `npx hardhat compile`
     
-- After successful compilation, you'll see the artifacts generated in the `artifacts-pvm` directory:
+- After successful compilation, you'll see the artifacts generated in the `artifacts-pvm` directory:
     
     `ls artifacts-pvm/contracts/*.sol/`
     
@@ -181,7 +181,7 @@ You can check the [`ResolcConfig`](https://github.com/paritytech/hardhat-polkad
 
 ### Set Up a Testing Environment
 Hardhat allows you to spin up a local testing environment to test and validate your smart contract functionalities before deploying to live networks. <br>
-The `hardhat-polkadot` plugin provides the possibility to spin up a local node with an ETH-RPC adapter for running local tests.
+The `hardhat-polkadot` plugin provides the possibility to spin up a local node with an ETH-RPC adapter for running local tests.
 
 For complete isolation and control over the testing environment, you can configure Hardhat to work with a fresh local Reef node.  <br>
 Instead, you can skip down to **Deploying to Pelagia** at the end.
@@ -189,14 +189,14 @@ Instead, you can skip down to **Deploying to Pelagia** at the end.
 
 **⚠️Warning⚠️**
 
-If you're using the default `hardhat.config.js` created by the `hardhat-polkadot` plugin: <br>
-it includes a `forking` section pointing to the Reef Pelagia Testnet.<br>
+If you're using the default `hardhat.config.js` created by the `hardhat-polkadot` plugin: <br>
+it includes a `forking` section pointing to the Reef Pelagia Testnet.<br>
 
-When you run `npx hardhat node`, Hardhat will start a fork of that network. <br>
+When you run `npx hardhat node`, Hardhat will start a fork of that network. <br>
 
-To use your local node instead, comment out the `forking` section.
+To use your local node instead, comment out the `forking` section.
  <br>
-Otherwise, `npx hardhat node` will continue to use the forked network even if a local node is defined in the configuration.
+Otherwise, `npx hardhat node` will continue to use the forked network even if a local node is defined in the configuration.
 
 Once configured, start your chosen testing environment with:
 
@@ -205,7 +205,7 @@ Once configured, start your chosen testing environment with:
 This command will launch either the forked network or local node (depending on your configuration) along with the ETH-RPC adapter, 
 providing you with a complete testing environment ready for contract deployment and interaction. 
 
-By default, the Substrate node will be running on `localhost:8000` and the ETH-RPC adapter on `localhost:8545`
+By default, the Substrate node will be running on `localhost:8000` and the ETH-RPC adapter on `localhost:8545`
 
 The output will be something like this:
 ```
@@ -230,17 +230,17 @@ Starting the Eth RPC Adapter at 127.0.0.1:8545
  ---
 
 ### Test Your Contract
-When testing your contract, be aware that [`@nomicfoundation/hardhat-toolbox/network-helpers`](https://hardhat.org/hardhat-network-helpers/docs/overview) is not fully compatible with Reef Pelagia’s available RPCs. 
+When testing your contract, be aware that [`@nomicfoundation/hardhat-toolbox/network-helpers`](https://hardhat.org/hardhat-network-helpers/docs/overview) is not fully compatible with Reef Pelagia’s available RPCs. 
 
-Specifically, Hardhat-only helpers like `time` and `loadFixture` may not work due to missing RPC calls in the node. 
+Specifically, Hardhat-only helpers like `time` and `loadFixture` may not work due to missing RPC calls in the node. 
 
-For more details, refer to the [Compatibility](https://github.com/paritytech/hardhat-polkadot/tree/main/packages/hardhat-polkadot-node#compatibility) section in the `hardhat-revive` docs. 
+For more details, refer to the [Compatibility](https://github.com/paritytech/hardhat-polkadot/tree/main/packages/hardhat-polkadot-node#compatibility) section in the `hardhat-revive` docs. 
 
-You should avoid using helpers like `time` and `loadFixture` when writing tests.
+You should avoid using helpers like `time` and `loadFixture` when writing tests.
 
 To run your tests:
 
-1. Update the `hardhat.config.js` file accordingly to the [Set Up a Testing Environment](https://docs.polkadot.com/develop/smart-contracts/dev-environments/hardhat/#set-up-a-testing-environment) section.
+1. Update the `hardhat.config.js` file accordingly to the [Set Up a Testing Environment](https://docs.polkadot.com/develop/smart-contracts/dev-environments/hardhat/#set-up-a-testing-environment) section.
 2. Execute the following command to run your tests:
     
     `npx hardhat test`
@@ -307,14 +307,14 @@ npx hardhat ignition deploy ./ignition/modules/MyToken.js --network reefPelagiaT
 
 ### Interacting with your contract
 Once deployed, you can create a script to interact with your contract. <br>
-To do so, create a file called `scripts/interact.js` and add some logic to interact with the contract.
+To do so, create a file called `scripts/interact.js` and add some logic to interact with the contract.
 
-For example, for the default `MyToken.sol` contract, you can use the following file that connects to the contract at its address and retrieves the `unlockTime`, which represents when funds can be withdrawn. 
+For example, for the default `MyToken.sol` contract, you can use the following file that connects to the contract at its address and retrieves the `unlockTime`, which represents when funds can be withdrawn. 
 
 The script converts this timestamp into a readable date and logs it. 
 
 It then checks the contract's balance and displays it. <br>
-Finally, it attempts to call the withdrawal function on the contract, but it catches and logs the error message if the withdrawal is not yet allowed (e.g., before `unlockTime`).
+Finally, it attempts to call the withdrawal function on the contract, but it catches and logs the error message if the withdrawal is not yet allowed (e.g., before `unlockTime`).
 
 ```
 // interact.js
@@ -362,7 +362,7 @@ npx hardhat run scripts/interact.js --network reefPelagiaTestnet
 ---
 
 ### Upgrading the Plugin
-If you already have a Hardhat Polkadot project and want to upgrade to a newer version of the plugin, to avoid errors (for example, `Cannot find module 'run-container'`), you can clean your dependencies by running the following commands:
+If you already have a Hardhat Polkadot project and want to upgrade to a newer version of the plugin, to avoid errors (for example, `Cannot find module 'run-container'`), you can clean your dependencies by running the following commands:
 
 `rm -rf node_modules package-lock.json`
 
@@ -371,6 +371,6 @@ After that, you can upgrade the plugin to the latest version by running the foll
 `npm install --save-dev @parity/hardhat-polkadot@latest
 npm install`
 
-Consider using [Node.js](https://nodejs.org/) 22.18+ and [npm](https://www.npmjs.com/) version 10.9.0+ to avoid issues with the plugin.
+Consider using [Node.js](https://nodejs.org/) 22.18+ and [npm](https://www.npmjs.com/) version 10.9.0+ to avoid issues with the plugin.
 
 

@@ -1,0 +1,31 @@
+{{- $path := .path -}}
+{{- $site := .site -}}
+{{- $source := readFile (printf "content/%s" $path) -}}
+{{- $basename := replaceRE "^.*/" "" $path -}}
+{{- $title := title (replace (strings.TrimSuffix ".md" $basename) "-" " ") -}}
+{{- $titleMatch := findRE `(?m)^title\s*:\s*"?(.*?)"?\s*$` $source 1 -}}
+{{- if gt (len $titleMatch) 0 -}}
+  {{- $title = replaceRE `(?m)^title\s*:\s*"?(.*?)"?\s*$` "$1" (index $titleMatch 0) -}}
+{{- end -}}
+{{- $weight := 0 -}}
+{{- $weightMatch := findRE `(?m)^weight\s*:\s*(-?[0-9]+)\s*$` $source 1 -}}
+{{- if gt (len $weightMatch) 0 -}}
+  {{- $weight = int (replaceRE `(?m)^weight\s*:\s*(-?[0-9]+)\s*$` "$1" (index $weightMatch 0)) -}}
+{{- end -}}
+{{- $url := "(not published as a standalone page)" -}}
+{{- $scratch := newScratch -}}
+{{- range $site.Pages -}}
+  {{- $page := . -}}
+  {{- with $page.File -}}
+    {{- if eq .Path $path -}}
+      {{- $scratch.Set "page" $page -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- with $scratch.Get "page" -}}
+  {{- $title = .Title -}}
+  {{- $weight = .Weight -}}
+  {{- $url = .Permalink -}}
+{{- end -}}
+{{- $sortKey := printf "%08d|%s|%s" $weight (lower $title) $path -}}
+{{- return (dict "path" $path "title" $title "weight" $weight "url" $url "source" $source "sortKey" $sortKey) -}}

@@ -4,6 +4,7 @@
     <article>
       <h1 class="text-center">{{ .Title }}</h1>
       <div class="text-center">{{ .Content }}</div>
+      <p class="text-center"><a href="{{ "/docs/agents.md" | relURL }}">Open the full raw docs markdown export</a></p>
 			<div class="card-list">
 				{{ $currentSection := .CurrentSection }}
 				{{ range where .Site.RegularPages.ByTitle "Section" .Section }}
